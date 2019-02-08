@@ -45,5 +45,16 @@ namespace MasterFinananceUI
             frm.Show();
 
         }
+
+        private void connectionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConfiguration frm = new frmConfiguration();
+            frm.TopLevel = false;
+            frm.AutoScroll = true;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            this.pnlMain.Controls.Clear();
+            this.pnlMain.Controls.Add(frm);
+            frm.Show();
+        }
     }
 }

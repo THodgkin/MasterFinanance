@@ -123,8 +123,9 @@
             // connectionsToolStripMenuItem
             // 
             this.connectionsToolStripMenuItem.Name = "connectionsToolStripMenuItem";
-            this.connectionsToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
+            this.connectionsToolStripMenuItem.Size = new System.Drawing.Size(95, 21);
             this.connectionsToolStripMenuItem.Text = "Connections";
+            this.connectionsToolStripMenuItem.Click += new System.EventHandler(this.connectionsToolStripMenuItem_Click);
             // 
             // MainWindow
             // 
