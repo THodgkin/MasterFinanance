@@ -26,29 +26,24 @@ namespace MasterFinananceUI
         private void accountsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAccount frm = new frmAccount();
-            frm.TopLevel = false;
-            frm.AutoScroll = true;
-            frm.FormBorderStyle = FormBorderStyle.None;
-            this.pnlMain.Controls.Clear();
-            this.pnlMain.Controls.Add(frm);
-            frm.Show();
+            LoadForm(frm);
         }
 
         private void locationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmLocations frm = new frmLocations();
-            frm.TopLevel = false;
-            frm.AutoScroll = true;
-            frm.FormBorderStyle = FormBorderStyle.None;
-            this.pnlMain.Controls.Clear();
-            this.pnlMain.Controls.Add(frm);
-            frm.Show();
+            LoadForm(frm);
 
         }
 
         private void connectionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmConfiguration frm = new frmConfiguration();
+            LoadForm(frm);
+        }
+
+        public void LoadForm(Form frm)
+        {
             frm.TopLevel = false;
             frm.AutoScroll = true;
             frm.FormBorderStyle = FormBorderStyle.None;
@@ -56,5 +51,11 @@ namespace MasterFinananceUI
             this.pnlMain.Controls.Add(frm);
             frm.Show();
         }
+
+        public void LoadMainForm()
+        {
+
+        }
+
     }
 }
