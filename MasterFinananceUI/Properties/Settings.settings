@@ -5,5 +5,8 @@
     <Setting Name="connectionString" Type="System.String" Scope="User">
       <Value Profile="(Default)">Data Source=DESKTOP-2R3NAU1\PERSONALINSTANCE;Initial Catalog=Finance Tracker;Integrated Security=True</Value>
     </Setting>
+    <Setting Name="databaseName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Database</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

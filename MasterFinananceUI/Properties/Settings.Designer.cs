@@ -35,5 +35,17 @@ namespace MasterFinananceUI.Properties {
                 this["connectionString"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Database")]
+        public string databaseName {
+            get {
+                return ((string)(this["databaseName"]));
+            }
+            set {
+                this["databaseName"] = value;
+            }
+        }
     }
 }

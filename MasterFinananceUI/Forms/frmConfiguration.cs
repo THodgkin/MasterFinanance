@@ -83,6 +83,7 @@ namespace MasterFinananceUI.Forms
 
             connString = String.Format("Data Source={0};Initial Catalog={1};Integrated Security=True;", server, dataBase);
 
+            Properties.Settings.Default.databaseName = "[" + dataBase + "]";
             Properties.Settings.Default.connectionString = connString;
             Properties.Settings.Default.Save();
             txtDatabase.Enabled = false;
@@ -100,6 +101,7 @@ namespace MasterFinananceUI.Forms
 
             connString = String.Format("Data Source={0};Initial Catalog={1};Integrated Security=True;", server, dataBase);
 
+            Properties.Settings.Default.databaseName = "[" + dataBase + "]";
             Properties.Settings.Default.connectionString = connString;
             Properties.Settings.Default.Save();
             txtDatabase.Enabled = false;
